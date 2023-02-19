@@ -1,0 +1,287 @@
+* {
+    @import: url('https://fonts.googleapis.com/css2?family=Trochut&display=swap,https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap');
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #949494fd;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.galeria{
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 40px 0;
+    position: absolute;
+    left: 150px;
+}
+.gd1{ 
+    width:220px;
+     height: 250px;
+     padding: 0 5px;
+}
+.gd2{
+    width:230px;
+    height: 250px;
+    padding: 0 20px;
+}
+.gd3{ 
+    width:170px;
+     height: 250px;
+     padding: 0 10px;
+}
+.gd4{ 
+    width:170px;
+     height: 250px;
+     padding: 0 10px;
+}
+.box {
+    position: relative;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 580px;
+    width: 380px;
+    background-color: #fff;
+    border-radius: 160px 160px 130px 130px;
+    box-shadow: 25px 25px 25px #00000060;
+    margin: 30px 30px 0 0;
+    padding: 20px 0;
+}
+
+
+.right {
+    position: absolute;
+    bottom: 5%;
+}
+
+.gg {
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    bottom: 97%;
+    left: 27%;
+}
+
+h2 {
+    display: none;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: 160px;
+    margin-bottom: 80px;
+}
+
+input {
+    display: flex;
+    border: none;
+    border-bottom: 2px solid #3e7b7e;
+    padding: 0px 10px;
+    margin-bottom: 10%;
+    margin-right: 90%;
+    width: 290px;
+
+}
+
+label {
+    font-size: 13px;
+    position: relative;
+    right: 85%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 70%;
+    left: 28%;
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 30px;
+    background: #428083;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.user-icon {
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    top: 5%;
+    left: 32%;
+    cursor: pointer;
+}
+.forget{
+position: relative;
+bottom: 40px;
+left: 125px;
+color: #3e7b7e;
+text-decoration: none;
+font-size:13px ;
+}
+
+@media (max-width:375px){
+    body {
+        background-color: #949494fd;
+        width: 100vw;
+        height: 100%;
+        background-size: cover;
+        overflow-x: hidden;
+        outline: invert;
+    }
+    .galeria{
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin: 50px 15px;
+        width: 100%;
+        height: 100vh;
+        outline: invert;
+        overflow: hidden;
+        position: absolute;
+        left: 30px;
+        bottom: 10%;
+    }
+    .gd1{ 
+        width:160px;
+         height: 200px;
+         padding: 0 5px;
+         position: absolute;
+        left: 25px;
+        top: 20%;
+    }
+    .gd2{
+        width:230px;
+        height: 250px;
+        padding: 0 20px;
+        position: absolute;
+        left: 170px;
+        top: 20%;
+    }
+    .gd3{ 
+        width:160px;
+         height: 240px;
+         padding: 0 10px;
+         position: absolute;
+         left: 210px;
+         top: 65%;
+    }
+    .gd4{ 
+        width:170px;
+         height: 240px;
+         padding: 0 10px;
+         position: absolute;
+        left: 30px;
+        top: 65%;
+        
+    }
+    .box {
+        position: absolute ;
+        top: 100%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        height: 380px;
+        width: 580px;
+        background-color: #fff;
+        border-radius: 150px 150px ;
+        box-shadow: 25px 25px 25px #00000060;
+        margin: 30px 30px 0 0;
+        padding: 20px 0;
+        overflow: hidden;
+    }
+    
+    
+   
+    
+    .gg {
+        width: 100px;
+        height: 35px;
+        position: absolute;
+        bottom: 97%;
+        left: 27%;
+    }
+    
+    h2 {
+        display: none;
+    }
+    
+    form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        margin-left: 160px;
+        margin-bottom: 80px;
+    }
+    
+    input {
+        display: flex;
+        border: none;
+        border-bottom: 2px solid #3e7b7e;
+        padding: 0px 10px;
+        margin-bottom: 10%;
+        margin-right: 90%;
+        width: 290px;
+    
+    }
+    
+    label {
+        font-size: 13px;
+        position: relative;
+        right: 85%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .button {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 70%;
+        left: 28%;
+        height: 35px;
+        width: 100px;
+        border: none;
+        border-radius: 30px;
+        background: #428083;
+        font-size: 13px;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    .user-icon {
+        width: 120px;
+        height: 120px;
+        position: fixed;
+        top: 5%;
+        left: 32%;
+        cursor: pointer;
+    }
+    .forget{
+    position: relative;
+    bottom: 40px;
+    left: 125px;
+    color: #3e7b7e;
+    text-decoration: none;
+    font-size:13px ;
+    }
+}

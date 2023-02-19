@@ -1,0 +1,638 @@
+* {
+    @import: url('https://fonts.googleapis.com/css2?family=Trochut&display=swap,https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap');
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cfcece;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    overflow-x: hidden; /*remove o scroll horizontal*/
+}
+
+.box {
+    display: block;
+    width: 680px;
+    height: 150%;
+    box-shadow: 1px 1px 10px #00000069;
+    background-color: #fff;
+    position: relative;
+    top: 80%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    outline: invert;
+}
+/*DESK MENU*/
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    float: right;
+    position: absolute;
+    left: 5%;
+    top: 2px;
+}
+
+.navbar {
+    position: relative;
+    top: 15px;
+}
+
+nav .menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    float: right;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li  {
+    position: relative;
+    right: 15px;
+    padding: 5px;
+    margin: 10px;
+    overflow: hidden;
+    outline: invert;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:200;
+    font-size: 12px;
+}
+
+nav ul a::after {
+    content: '';
+    background: #000a;
+    height: 3px;
+    display: block;
+    width: 0%;
+    transition: 0.5s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+/*CONTEUDO PRINCIPAl*/
+.img1 {
+    position: absolute;
+    top: 150px;
+    left: 35px;
+    border-radius: 45px;    box-shadow: 5px 5px 15px 5px #00000042;
+}
+
+h1 {
+    display: block;
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 15%;
+    left: 38%;
+}
+
+span {
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+p {
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 38%;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000c5;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    left: 1px;
+    font-size: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: #ffffffdc;
+    background-color: #000000;
+    border: none;
+    border-radius:35px 35px 30px 30px;
+    width: 105px;
+    height: 34px;
+}
+
+.more:hover {
+    content: '';
+    background: #000000de;
+    transition: 0.5s ease-in-out;
+    padding: 4px;
+}
+/*HABILIDADES ADICIONAIS*/
+.conteudo {
+    display: block;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 45%;
+    left: 60px;
+}
+
+#cam {
+    display: flexbox;
+    margin-right: 30px;
+    padding: 0px;
+    justify-content: space-between;
+    position: relative;
+    top: 15px;
+    right: 5px;
+}
+
+#pht {
+    display: flexbox;
+    margin-right: 45px;
+    padding: 0px;
+    justify-content: space-between;
+    position: relative;
+    top:5px;
+    left: 55px;
+}
+
+#screen {
+    display: flexbox;
+    margin-right: 45px;
+    padding: 0px;
+    justify-content: space-between;
+    position: absolute;
+    top: 25%;
+    left: 515px;
+}
+
+.lb1 {
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    position: relative;
+    top: 20px;
+    right: 125px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 200;
+}
+
+.lb2 {
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: absolute;
+    top: 65px;
+    left:233px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 200;
+}
+
+.lb3 {
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    position: absolute;
+    top: 50px;
+    left: 475px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 200;
+}
+/*LINKS PARA FILME E MUSICA*/
+.links{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position:absolute;
+   top: 60%;
+   left: 25%;
+   width: 50%;
+   height: 100px;
+   border: 1px solid #000;
+   border-radius: 150px;
+}
+.link1{
+    display: block;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 25px;
+    width: 26px;
+    height: 23px;
+}
+.link1:hover{
+    content: '';
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 35px;
+ }
+.link2{
+    display: block;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 25px;
+    width:25px;
+    height: 25px;
+}
+.link2:hover{
+    content: '';
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 35px;
+ }
+/*MIDIAS*/
+.medias {
+    position: relative;
+    top: 83%;
+    left: 15%;
+}
+
+.item1 {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 60%;
+    left: 10%;
+}
+.item1:hover{
+    content: '';
+    transition: 0.5s ease-in-out;
+    padding: 1px;
+ }
+
+.item2 {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 60%;
+    left: 30%;
+}
+.item2:hover{
+    content: '';
+    transition: 0.5s ease-in-out;
+    padding: 1px;
+ }
+
+.item3 {
+    width: 8px;
+    height: 14px;
+    position: relative;
+    top: 60%;
+    left: 50%;
+}
+.item3:hover{
+    content: '';
+    transition: 0.5s ease-in-out;
+    padding: 1px;
+ }
+/*COPYRIGHT*/
+.copyright{
+    font-family: sans-serif;
+    height: 2px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 83%;
+    left: 5%;
+}
+.cp{
+    position: relative;
+    top: 20px;
+    left: 195px;
+    font-size: 12px; 
+}
+.cr{
+    position: relative;
+    top: 45px;
+    left: 15px;
+    font-size: 11px;
+}
+.cr a{
+    text-decoration: none;
+    color: #388096;
+}
+/*RESPONSIVIDADE-/-MOBILE*/
+@media (max-width:320px) {
+    .box {
+        display: block;
+        width: 100%;
+        height: 150%;
+        box-shadow: 1px 1px 10px #00000069;
+        background-color: #fff;
+        position: relative;
+        top: 80%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+        outline: invert;
+    }
+/*MENU MOBILE*/
+.navbar {
+    position: relative;
+    top: 10px;
+}
+    nav .menu-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: block;
+        padding:  50px;
+        position: relative;
+        left: 25%;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 50%;
+        height: 50%;
+        top: 0;
+        left: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.5s ease-in;
+        background: #a7a7a7;
+    }
+
+    nav ul.active {
+        visibility: visible;
+    }
+
+    nav ul li a {
+        font-size: 11px;
+        color: #fff;
+    }
+
+/*CONTEUDO PRINCIPAL*/
+    .img1 {
+        position: absolute;
+        top: 110px;
+        left: 115px;
+        border-radius: 2px;
+        box-shadow: 5px 5px 15px 5px #0000005e;
+    }
+
+    h1 {
+        display: block;
+        font-size: 23px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        margin-top: 45%;
+        left: 28%;
+    }
+
+    span {
+        display: flex;
+        position: absolute;
+        margin-top: 40%;
+        left: 29%;
+        font-size: 12px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+
+    p {
+        display: block;
+        padding: 0px 20px;
+        position: absolute;
+        top: 39%;
+        left: 10px;
+        font-size: 12px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #000000c5;
+    }
+
+    .more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 35px;
+        left: 110px;
+        font-size: 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: none;
+        color: #ffffffdc;
+        background-color: #000000;
+        border: none;
+        border-radius:20px 20px 35px 35px;
+        width: 105px;
+        height: 34px;
+    }
+
+    /*HABILIDADES*/
+    .conteudo {
+        display: flex;
+        width: 100vw;
+        height: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 53%;
+        left: 0px;
+        overflow: hidden;
+        outline: invert;
+    }
+
+    #cam {
+        display: flex;
+        margin-right: 30px;
+        padding: 0px;
+        justify-content: space-between;
+        position: absolute;
+        left: 45px;
+        top: 15%;
+    }
+
+    #pht {
+        display: flex;
+        margin-right: 45px;
+        padding: 0px;
+        justify-content: space-between;
+        position: absolute;
+        left: 175px;
+        top: 30%;
+    }
+
+    #screen {
+        display: flex;
+        margin-right: 45px;
+        padding: 0px;
+        justify-content: space-between;
+        position: absolute;
+        top: 30%;
+        left: 290px;
+    }
+
+
+    .lb1 {
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        position: relative;
+        top: 50px;
+        right: 115px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 10px;
+
+    }
+
+    .lb2 {
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        position: relative;
+        top: 10px;
+        left:5px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 10px;
+
+    }
+
+    .lb3 {
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        position: absolute;
+        top: 60px;
+        left: 260px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 10px;
+
+    }
+
+    /*LINKS PARA FILME E MUSICA*/
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position:absolute;
+    top: 69%;
+    left: 42%;
+    width: 20%;
+    height: 170px;
+    border: 1px solid #000;
+    border-radius:150px ;
+ }
+
+ .link1{
+     display: block;
+     justify-content: space-between;
+     padding: 0px;
+     margin: 35px;
+     width: 26px;
+     height: 23px;
+ }
+ .link1:hover{
+    content: '';
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 35px;
+ }
+ .link2{
+     display: block;
+     justify-content: space-between;
+     padding: 0px;
+     margin: 35px;
+     width:25px;
+     height: 25px;
+ }
+ .link2:hover{
+    content: '';
+    transition: 0.1s;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 35px;
+ }
+    /*MIDIAS SOCIAIS*/
+    .medias {
+        position: relative;
+        top: 76%;
+        left: 15%;
+    }
+
+    .item1 {
+        width: 15px;
+        height: 15px;
+        position: relative;
+        top: 60%;
+        left: 10%;
+    }
+
+    .item2 {
+        width: 15px;
+        height: 15px;
+        position: relative;
+        top: 60%;
+        left: 30%;
+    }
+
+    /*COPYRIGHT*/
+    .copyright{
+        font-family: sans-serif;
+        height: 2px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 55%;
+        left: -10%;
+    }
+    .cp{
+        position: relative;
+        top: 70px;
+        left: 140px;
+        font-size: 11px; 
+    }
+    .cr{
+        position: absolute;
+        top:240px;
+        left: 170px;
+        font-size: 10px;
+    }
+    .cr a{
+        text-decoration: none;
+        color: #388096;
+    }
+}
